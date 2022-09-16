@@ -73,10 +73,24 @@
                 <span class="form-message"></span>
             </div>
 
-            <button class="form-submit">Đăng ký</button>
+            <a class="form-submit">Đăng ký</a>
         </form>
     </div>
 
     <script src="./main.js"></script>
+    <script>
+        Validator({
+            form: "#form-1",
+            rules: [
+                Validator.isRequired('#fullname'),
+                Validator.isEmail('#email'),
+                Validator.isPassword('#password',8,32),
+                Validator.isConfirm('#password_confirm', function(){
+                    return document.querySelector('#form-1 #password').value;
+                })
+            ]
+        })
+
+    </script>
 </body>
 </html>

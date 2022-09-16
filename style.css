@@ -73,6 +73,7 @@ body{
     background-color: white;
     text-align: center;
     border-radius: 15px;
+    padding-bottom: 10px;
 }
 
 .form-heading{
@@ -96,14 +97,40 @@ body{
 .form-input{
     padding: 10px 0px 10px 10px;
     width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-message{
+    text-align: left;
+    margin-top: 2px;
+    font-size: 12px;
+    display: block;
 }
 
 .form-submit{
-    margin: 20px;
+    display: block;
+    margin: 0 auto;
     padding: 10px 40px;
     font-size: 16px;
     background-color: aquamarine;
     border-radius: 10px;
     border-color: rgb(185, 182, 182);
     cursor: pointer;
+    width: 100px;
+}
+
+.form-submit.disable{
+    background-color: rgb(60, 62, 62);
+    color: white;
+    cursor: auto;
+}
+
+/* active */
+.form-group.active .form-input{
+    border: 1px solid red;
+}
+
+.form-group.active .form-message{
+    color: red;
 }
