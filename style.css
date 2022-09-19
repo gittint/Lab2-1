@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: rgb(24, 24, 24);
+}
+
+.app{
+    margin-top: 20px;
+}
+
+.slide{
+    position: relative;
+}
+
+.slide-item{
+    width: 800px;
+    margin: 0 auto;
+    display: none;
+}
+
+.slide-item.active{
+    display: block;
+}
+
+.slide-item img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+.slide-btn{
+    position: absolute;
+    bottom: 4%;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+}
+
+.slide-btn::selection{
+    background-color: transparent;
+}
+
+.slide-btn i{
+    color: aliceblue;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 10px;
+}
+
+.slide-btn i:hover{
+    color: rgb(104, 101, 101);
+}
+
+.btn-left .btn-right{
+    font-size: 20px;
+}
+
+.btn-around.active{
+    color: rgb(104, 101, 101);
+}
+
+/* form  */
+.form{
+    width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    padding-bottom: 10px;
+}
+
+.form-heading{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+
+.form-group{
+    padding: 10px 30px;
+}
+
+.form-lable{
+    display: block;
+    padding-bottom: 5px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.form-input{
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.form-message{
+    text-align: left;
+    margin-top: 2px;
+    font-size: 12px;
+    display: block;
+}
+
+.form-submit{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    border-color: rgb(185, 182, 182);
+    cursor: pointer;
+    width: 100px;
+}
+
+.form-submit.disable{
+    background-color: rgb(60, 62, 62);
+    color: white;
+    cursor: auto;
+}
+
+/* active */
+.form-group.active .form-input{
+    border: 1px solid red;
+}
+
+.form-group.active .form-message{
+    color: red;
+}
